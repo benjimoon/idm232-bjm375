@@ -1,7 +1,5 @@
-
-
 <?php 
-$page_name = 'Home';
+$page_name = 'Booking';
 include_once 'header.php';
 ?>
 
@@ -10,5 +8,3 @@ include_once 'header.php';
 <?php echo $welcome; ?>
 
 <?php include_once 'footer.php'?>
-
-
