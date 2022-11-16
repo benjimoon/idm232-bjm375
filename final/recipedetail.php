@@ -1,13 +1,16 @@
-<?php 
-$page_name = 'Recipe Detail';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php';
+<?php
+// Make sure the path is correct for each include on this page. Delete this comment once done
+include_once __DIR__ . '/app.php';
+$page_title = 'Single Recipe';
+include_once __DIR__ . '/_components/header.php';
 ?>
+
 <section class="recipe-detail-all">
 <div class="recipe-detail-info">
 <h1 class="recipe-header"> Korean Fried Chicken (Yangnyeom Chicken)</h1>
 <p class="recipe-desc">Prep Time: 25 Minutes | Cooking Time: 20 Minutes | Serving Size: 4 people</p>
 <p class="recipe-italics"> Korean fried chicken with a thin, crackly crust that’s glazed with a delicious soy garlic or red spicy sauce! </p>
-<img class="chicken-img" src="graphics/chicken.jpeg">
+<img class="chicken-img" src="dist/images/chicken.jpeg">
 </div>
 <div class="recipe-stuff">
 <h1 class="recipe-title">Ingredients</h1>
@@ -57,5 +60,5 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/header.php';
 </ol>
 </div>
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/footer.php';?>
 </section>
+<?php include_once __DIR__ . '/_components/footer.php';
