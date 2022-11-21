@@ -7,6 +7,10 @@ include_once __DIR__ . '/_components/header.php';
 <br>
 <p class="home-title">welcome to bibimbook</p>
 <p class="home-desc">dive into korean home cooking</p>
+<form action="<?php echo site_url();?>/admin/search" method="GET" class="search_bar">
+          <input type = "text" name="search" id="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
 <section class="home-all">
 <div class="category-layout1">
 <img class="category-img" src="dist/images/kalbi.jpeg">

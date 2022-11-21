@@ -10,8 +10,8 @@ $recipes = get_recipes();
       <div class="">
         <h1 class="form-title edit">Recipes</h1>
         <p class="table_desc">A list of all the recipes on the site including their Title, Prep Time, Ingredients, Instructions, Cook Time, and Serving Size.</p>
-        <form action="<?php echo site_url();?>/admin/search" method="GET">
-          <input type = "text" name="search" id="search" placeholder="Search">
+        <form action="<?php echo site_url();?>/admin/search" method="GET" class="search_bar">
+          <input type = "text" name="search" id="search" placeholder="Search" class="search_input">
           <button type="submit">Search</button>
         </form>
         
