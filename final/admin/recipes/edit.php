@@ -59,12 +59,22 @@ if ($result->num_rows > 0) {
 
               <div class="">
                 <label for="">Ingredients</label>
-                <textarea class="main-textarea" type="text" name="ingredients" value="<?php echo $recipe['ingredients']?>"></textarea>
+                <textarea class="main-textarea" type="text" name="ingredients">
+                <?php echo $recipe['ingredients']; ?>
+                </textarea>
               </div>
               <br>
               <div class="">
                 <label for="">Instructions</label>
-                <textarea class="main-textarea" type="text" name="instructions" value="<?php echo $recipe['instructions']?>"></textarea>
+                <textarea class="main-textarea" type="text" name="instructions">
+                <?php echo $recipe['instructions']; ?>
+                </textarea>
+                <br>
+                <div class="">
+                <label for="">Image Path</label>
+                <input class="main-form" type="text" name="image_path" value="<?php echo $recipe['image_path']?>">
+              </div>
+              <br>
               </div>
               <br>
               <div class="">

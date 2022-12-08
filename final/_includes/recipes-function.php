@@ -20,12 +20,12 @@ function get_recipes()
  * @param  string $phone - phone number of the user
  * @return object - mysqli_result
  */
-function add_recipe($title, $prep_time, $ingredients, $cook_time, $serving_size)
+function add_recipe($title, $prep_time, $ingredients, $cook_time, $serving_size, $image_path)
 {
     global $db_connection;
     $query = 'INSERT INTO recipes';
-    $query .= ' (title, prep_time, ingredients, cook_time, serving_size)';
-    $query .= " VALUES ('$title', '$prep_time', '$ingredients', '$cook_time', '$serving_size')";
+    $query .= ' (title, prep_time, ingredients, cook_time, serving_size, image_path)';
+    $query .= " VALUES ('$title', '$prep_time', '$ingredients', '$cook_time', '$serving_size','$image_path')";
 
     $results = mysqli_query($db_connection, $query);
     return $results;

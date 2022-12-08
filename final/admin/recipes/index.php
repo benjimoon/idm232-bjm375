@@ -1,18 +1,15 @@
 <?php
 include_once __DIR__ . '/../../app.php';
-$page_title = 'Recipes';
+$page_title = 'Admin Recipes';
 include_once __DIR__ . '/../../_components/header.php';
 $recipes = get_recipes();
 ?>
-<div class="">
-  <div class="">
-    <div class="">
-      <div class="">
-        <h1 class="form-title edit">Recipes</h1>
+
+        <h1 class="form-title edit">Admin Recipes</h1>
         <p class="table_desc">A list of all the recipes on the site including their Title, Prep Time, Ingredients, Instructions, Cook Time, and Serving Size.</p>
         <form action="<?php echo site_url();?>/admin/search" method="GET" class="search_bar">
           <input type = "text" name="search" id="search" placeholder="Search" class="search_input">
-          <button type="submit">Search</button>
+          <button class="search-button"type="submit">Search</button>
         </form>
         
         <?php
@@ -22,24 +19,14 @@ $recipes = get_recipes();
           }
 
 ?>
-      </div>
       <div class="button-div">
         <button type="button"
-          class="add_user_button">
-          <a href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
+          class="add_recipe_button">
+          <a class="add_recipe" href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
             Add Recipe</a></button>
-      </div>
-    </div>
-    <div class="">
-      <div class="">
-        <div class="">
-          <div class="">
-            <?php include __DIR__ . '/../../_components/table-recipes.php'; ?>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+            <?php include __DIR__ . '/../../_components/table-recipes.php'; ?>
+
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

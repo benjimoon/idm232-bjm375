@@ -32,6 +32,8 @@ include_once __DIR__ . '/../../_components/header.php';
     <textarea class="main-textarea" name="instructions">
 </textarea>
 <br>
+<label for="">Image Path</label>
+     <input class="main-form" type="text" name="image_path">
     <input type="submit" value="Submit" class="submit-button">
 
 

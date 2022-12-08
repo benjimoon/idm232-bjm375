@@ -17,7 +17,7 @@ $document_title = $page_title . ' | ' . $site_title;
     <title><?php echo $document_title ?></title>
     <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.ico">
     <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/style.css">
-    <script src="https://cdn.tiny.cloud/1/p8opgc7jxg954rynue6vw5uinwx5hve6yl6cu7t708978lab/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="//cdn.tiny.cloud/1/p8opgc7jxg954rynue6vw5uinwx5hve6yl6cu7t708978lab/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   </head>
 <body>
 <header class="main-head" id="intro">
@@ -32,10 +32,10 @@ $document_title = $page_title . ' | ' . $site_title;
         <li><a href="<?php echo site_url(); ?>/index.php" class="text">Home</a></li>
 </div>
 <div class="text-underline-2">
-  <li><a href="<?php echo site_url(); ?>/recipedetail.php" class="text">Single Recipe</a></li>
+  <li><a href="<?php echo site_url(); ?>/admin/recipes/user-view.php" class="text">All Recipes</a></li>
 </div>
   <div class="text-underline-2">
-  <li><a href="<?php echo site_url(); ?>/admin/recipes/index.php" class="text">All Recipes</a></li>
+  <li><a href="<?php echo site_url(); ?>/admin/recipes/index.php" class="text">Admin Recipes</a></li>
 </div>
 </ul>
       <div class="hamburger">
